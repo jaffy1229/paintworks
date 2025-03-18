@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			/* Set a Dark Blue Background */
+			body {
+				background-color: #001f3f; /* Dark Blue */
+				color: white; /* White text for contrast */
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			
+			/* Header Text and Image Layout */
+.header-text-container {
+    display: flex;
+    justify-content: space-between; /* Ensures the text and image are on opposite sides */
+    align-items: center; /* Vertically center-aligns the text and image */
+    gap: 20px; /* Optional: space between text and image */
+}
+
+.header-text {
+    flex: 1; /* Allow text to take up remaining space */
+    text-align: left; /* Ensure text is left-aligned */
+}
+			
+.custom-divider {
+    border: none; /* Remove default border */
+    border-top: 2px solid #4CAF50; /* Green top border */
+    margin: 20px 0; /* Add some space above and below the line */
+    width: 100%; /* Make the line span the full width */
+}
+			
+.header-image img {
+    max-width: 300px; /* Adjust the image width */
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+			/* Banner Image at the top of the page */
+			.banner-img {
+				width: 100%;
+				height: auto;
+			}
+
+			/* Banner Section */
+			.banner {
+				background-color: #4CAF50; /* Green background */
+				color: white;
+				padding: 20px;
+				text-align: center;
+				font-size: 24px;
+			}
+
+			/* Button Section */
+			.button-container {
+				text-align: center;
+				margin-top: 20px;
+			}
+			.button-container button {
+				font-size: 18px;
+				padding: 10px 20px;
+				margin: 5px;
+				cursor: pointer;
+				border: none;
+				background-color: #4CAF50;
+				color: white;
+				border-radius: 5px;
+			}
+			.button-container button:hover {
+				background-color: #45a049;
+			}
+
+			/* Video Container - Image on the left and Paragraph left-justified */
+			.video-container {
+				display: flex;
+				align-items: center;
+				margin-bottom: 20px;
+				justify-content: center;
+			}
+			.video-container img {
+				width: 100px; /* Adjust the image size */
+				height: auto;
+				margin-right: 20px;
+			}
+			/* Paragraph Left Justified and White Text */
+			.video-container p {
+				flex: 1;
+				max-width: 600px; /* Limit width of the paragraph */
+				text-align: left; /* Left justify the text */
+				color: white; /* Ensure text is white */
+			}
+
+			.video-container iframe {
+				width: 400px;
+				height: 225px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Banner Image at the Top of the Page -->
+		<img src="images/paintworks.png" alt="Banner Image" class="banner-img" />
+
+		<!-- Banner Section -->
+		<div class="banner">
+			Welcome to Our Website!
+		</div>
+
+		<!-- Button Section -->
+		<div class="button-container">
+			<button onclick="window.location.href='#about'">About</button>
+			<button onclick="window.location.href='#working-practices'">Working Practices</button>
+			<button onclick="window.location.href='#contact'">Contact</button>
+		</div>
+
+<header id="header">
+    <div class="header-content">
+        <a href="index.html" class="logo">Editorial by HTML5 UP</a>
+        <div class="header-text-container">
+            <div class="header-text">
+                <h2>Welcome to Paintworks</h2>
+                <p>
+                    At Paintworks, we are experts in high-quality residential spray finishing, bringing a superior level of craftsmanship to every project. 
+                    Our professional painting services are designed to transform your home with a flawless, modern finish that traditional brush and roller methods simply can’t achieve.
+                </p>
+                <p>
+                    A spray finish delivers an ultra-smooth, even coat with no visible brush strokes, ensuring a high-end look that enhances the beauty of any surface. 
+                    To achieve this level of perfection, we prioritize meticulous preparation. Our process includes thorough mechanical sanding, precise filling of imperfections, 
+                    and expert priming—ensuring a durable, long-lasting, and truly professional result.
+                </p>
+                <p>
+                    With our commitment to quality and attention to detail, Paintworks guarantees a finish that not only looks stunning but also stands the test of time. 
+                    Whether you're refreshing a single room or giving your entire home a new lease of life, we deliver outstanding results with efficiency and care.
+                
+				
+				</p>
+            </div>
+            <div class="header-image">
+                <img src="images/door.png" alt="Paintworks Image">
+            </div>
+        </div>
+    </div>
+</header>
+<hr class="custom-divider">
+		<section>
+			<!-- Video Section with Image to the Left of Paragraph -->
+			<div class="video-container">
+				<img src="images/sander.png" alt="Image 1">
+				<p>With the Mirka Abranet sanding system, the dust is dramatically reduced with 99% of dust being caught by the dust extractor. All surfaces are machine sanded to give a smooth surface prior to paint application.</p>
+				<iframe src="https://www.youtube.com/embed/SrT7cgNMJWI" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="video-container">
+				<img src="images/airless_gun.png" alt="Image 2">
+				<p>Airless spraying using high pressure to atomize the pain tin to fine particles that are apllied to the surface evenly. This creates a superior finish.</p>
+				<iframe src="https://www.youtube.com/embed/fdfEgmH-dC8" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="video-container">
+				<img src="images/hvlp.png" alt="Image 3">
+				<p>HVLP is a low pressure system which using a turbine to atomize the paint. This creates an ultra fine finish. It is especially suitable for furniture and other small items..</p>
+				<iframe src="https://www.youtube.com/embed/MQAQkgWin6k" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+
+	</body>
+</html>
