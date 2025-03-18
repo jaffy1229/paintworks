@@ -15,36 +15,36 @@
 			}
 			
 			/* Header Text and Image Layout */
-.header-text-container {
-    display: flex;
-    justify-content: space-between; /* Ensures the text and image are on opposite sides */
-    align-items: center; /* Vertically center-aligns the text and image */
-    gap: 20px; /* Optional: space between text and image */
-}
-
-.header-text {
-    flex: 1; /* Allow text to take up remaining space */
-    text-align: left; /* Ensure text is left-aligned */
-}
-			
-.custom-divider {
-    border: none; /* Remove default border */
-    border-top: 2px solid #4CAF50; /* Green top border */
-    margin: 20px 0; /* Add some space above and below the line */
-    width: 100%; /* Make the line span the full width */
-}
-			
-.header-image img {
-    max-width: 300px; /* Adjust the image width */
-    height: auto;
-    border-radius: 8px; /* Optional: Add rounded corners */
-}
-
-			/* Banner Image at the top of the page */
-			.banner-img {
-				width: 100%;
-				height: auto;
+			.header-text-container {
+			    display: flex;
+			    justify-content: space-between; /* Ensures the text and image are on opposite sides */
+			    align-items: center; /* Vertically center-aligns the text and image */
+			    gap: 20px; /* Optional: space between text and image */
 			}
+
+			.header-text {
+			    flex: 1; /* Allow text to take up remaining space */
+			    text-align: left; /* Ensure text is left-aligned */
+			}
+			
+			.custom-divider {
+			    border: none; /* Remove default border */
+			    border-top: 2px solid #4CAF50; /* Green top border */
+			    margin: 20px 0; /* Add some space above and below the line */
+			    width: 100%; /* Make the line span the full width */
+			}
+			
+			.header-image img {
+			    max-width: 500px; /* Adjust the image width */
+			    height: 100;
+			    border-radius: 8px; /* Optional: Add rounded corners */
+			}
+
+.banner-img {
+    width: 1430px; /* Custom width */
+    height: 200px; /* Custom height */
+}
+
 
 			/* Banner Section */
 			.banner {
@@ -82,7 +82,7 @@
 				justify-content: center;
 			}
 			.video-container img {
-				width: 100px; /* Adjust the image size */
+				width: 200px; /* Adjust the image size */
 				height: auto;
 				margin-right: 20px;
 			}
@@ -98,12 +98,47 @@
 				width: 400px;
 				height: 225px;
 			}
+
+			/* Contact Form Section */
+			.contact-form-section {
+				background-color: #006400; /* Dark Green */
+				color: #ffffff;
+				padding: 40px;
+				box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+				margin-top: 50px;
+				border-radius: 8px;
+			}
+
+			/* Form Styles */
+			.contact-form-section input,
+			.contact-form-section textarea {
+				width: 100%;
+				padding: 10px;
+				margin: 10px 0;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+			}
+
+			.contact-form-section button {
+				background-color: #4CAF50;
+				color: white;
+				font-size: 16px;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.contact-form-section button:hover {
+				background-color: #45a049;
+			}
+
 		</style>
 	</head>
 	<body>
 
 		<!-- Banner Image at the Top of the Page -->
-		<img src="images/paintworks.png" alt="Banner Image" class="banner-img" />
+		<img src="images/paintworks2.png" alt="Banner Image" class="banner-img" />
 
 		<!-- Banner Section -->
 		<div class="banner">
@@ -117,35 +152,35 @@
 			<button onclick="window.location.href='#contact'">Contact</button>
 		</div>
 
-<header id="header">
-    <div class="header-content">
-        <a href="index.html" class="logo">Editorial by HTML5 UP</a>
-        <div class="header-text-container">
-            <div class="header-text">
-                <h2>Welcome to Paintworks</h2>
-                <p>
-                    At Paintworks, we are experts in high-quality residential spray finishing, bringing a superior level of craftsmanship to every project. 
-                    Our professional painting services are designed to transform your home with a flawless, modern finish that traditional brush and roller methods simply can’t achieve.
-                </p>
-                <p>
-                    A spray finish delivers an ultra-smooth, even coat with no visible brush strokes, ensuring a high-end look that enhances the beauty of any surface. 
-                    To achieve this level of perfection, we prioritize meticulous preparation. Our process includes thorough mechanical sanding, precise filling of imperfections, 
-                    and expert priming—ensuring a durable, long-lasting, and truly professional result.
-                </p>
-                <p>
-                    With our commitment to quality and attention to detail, Paintworks guarantees a finish that not only looks stunning but also stands the test of time. 
-                    Whether you're refreshing a single room or giving your entire home a new lease of life, we deliver outstanding results with efficiency and care.
-                
-				
-				</p>
-            </div>
-            <div class="header-image">
-                <img src="images/door.png" alt="Paintworks Image">
-            </div>
-        </div>
-    </div>
-</header>
-<hr class="custom-divider">
+		<header id="header">
+		    <div class="header-content">
+		        <a href="index.html" class="logo">Editorial by HTML5 UP</a>
+		        <div class="header-text-container">
+		            <div class="header-text">
+		                <h2>Welcome to Paintworks</h2>
+		                <p>
+		                    At Paintworks, we are experts in high-quality residential spray finishing, bringing a superior level of craftsmanship to every project. 
+		                    Our professional painting services are designed to transform your home with a flawless, modern finish that traditional brush and roller methods simply can’t achieve.
+		                </p>
+		                <p>
+		                    A spray finish delivers an ultra-smooth, even coat with no visible brush strokes, ensuring a high-end look that enhances the beauty of any surface. 
+		                    To achieve this level of perfection, we prioritize meticulous preparation. Our process includes thorough mechanical sanding, precise filling of imperfections, 
+		                    and expert priming—ensuring a durable, long-lasting, and truly professional result.
+		                </p>
+		                <p>
+		                    With our commitment to quality and attention to detail, Paintworks guarantees a finish that not only looks stunning but also stands the test of time. 
+		                    Whether you're refreshing a single room or giving your entire home a new lease of life, we deliver outstanding results with efficiency and care.
+		                </p>
+		            </div>
+		            <div class="header-image">
+		                <img src="images/door.png" alt="Paintworks Image">
+		            </div>
+		        </div>
+		    </div>
+		</header>
+		<br><br>
+		<hr class="custom-divider">
+		<br><br><br>
 		<section>
 			<!-- Video Section with Image to the Left of Paragraph -->
 			<div class="video-container">
@@ -163,9 +198,50 @@
 			<div class="video-container">
 				<img src="images/hvlp.png" alt="Image 3">
 				<p>HVLP is a low pressure system which using a turbine to atomize the paint. This creates an ultra fine finish. It is especially suitable for furniture and other small items..</p>
-				<iframe src="https://www.youtube.com/embed/MQAQkgWin6k" frameborder="0" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/MQAQkgWin6k" frameborder="" allowfullscreen></iframe>
+			</div>
+
+			<div>
+				<br><br>
+				<hr class="custom-divider">
+				<br><br>
+				<div style="display: flex; gap: 20px; align-items: flex-start;">
+				    <!-- Left Column with Images -->
+				    <div style="display: flex; flex-direction: column; gap: 20px;">
+				        <!-- First Image -->
+				        <div style="max-width: 100%; height: auto;">
+				            <img src="images/prep1.png" alt="Image 1" style="width: 300px; height: auto;">
+				        </div>
+
+				        <!-- Second Image -->
+				        <div style="max-width: 100%; height: auto;">
+				           
+				        </div>
+				    </div>
+
+				    <!-- Paragraph to the Right -->
+				    <div style="flex: 1; max-width: 600px;">
+				        <p>Proper preparation is the foundation of a high-quality, professional paint job. No matter how skilled a painter is or how premium the paint may be, the final result will only be as good as the surface it is applied to. Without thorough preparation, even the best materials can’t achieve a flawless finish.</p>
+				    </div>
+				</div>
 			</div>
 		</section>
+		<!-- Contact Form Section -->
+		<div id="contact" class="contact-form-section">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Your Name" required>
+				
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="Your Email" required>
+				
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+				
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
 
 	</body>
 </html>
