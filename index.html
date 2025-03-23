@@ -14,19 +14,64 @@
 				padding: 0;
 			}
 			
-			/* Header Text and Image Layout */
-			.header-text-container {
-			    display: flex;
-			    justify-content: space-between; /* Ensures the text and image are on opposite sides */
-			    align-items: center; /* Vertically center-aligns the text and image */
-			    gap: 20px; /* Optional: space between text and image */
-			}
+			#header {
+    width: 100%;
+    background-color: #001f3f; /* Dark Blue */
+    color: white;
+    padding: 20px 0; /* Add some padding for spacing */
+}
 
-			.header-text {
-			    flex: 1; /* Allow text to take up remaining space */
-			    text-align: left; /* Ensure text is left-aligned */
-			}
-			
+.header-content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Vertically center the content */
+    width: 100%;
+}
+
+.header-text-container {
+    display: flex;
+    justify-content: center; /* Center the text and image horizontally */
+    align-items: center; /* Vertically align text and image */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the header content */
+}
+
+.header-text {
+    text-align: left; /* Ensure the text is left-aligned */
+    max-width: 800px; /* Limit the width of the text */
+    flex: 1; /* Allow the text to take up the available space */
+}
+
+.header-image {
+    max-width: 500px; /* Adjust the image size */
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.header-text p {
+    text-align: left; /* Ensure each paragraph is left-aligned */
+    line-height: 1.6; /* Adjust the line height for readability */
+}
+
+/* Optional: Styling for headers */
+.header-text h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Custom Divider */
+.custom-divider {
+    border: none;
+    border-top: 2px solid #4CAF50; /* Green top border */
+    margin: 20px 0;
+    width: 100%;
+}
 			.custom-divider {
 			    border: none; /* Remove default border */
 			    border-top: 2px solid #4CAF50; /* Green top border */
@@ -43,8 +88,9 @@
 .banner-img {
     width: 1430px; /* Custom width */
     height: 200px; /* Custom height */
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
 }
-
 
 			/* Banner Section */
 			.banner {
