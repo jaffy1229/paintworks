@@ -37,16 +37,12 @@ body {
     flex: 1; /* Allow the text to take up the available space */
 }
 
-.header-image {
-    max-width: 500px; /* Adjust the image size */
+/* New addition: Center the text when the browser is maximized */
+.header-text-container {
+    margin: 0 auto;
 }
 
-.header-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
+/* Ensure that the paragraph text is left-justified */
 .header-text p {
     text-align: left; /* Ensure each paragraph is left-aligned */
     line-height: 1.6; /* Adjust the line height for readability */
@@ -69,8 +65,8 @@ body {
 
 /* Banner Image */
 .banner-img {
-    width: 1430px; /* Custom width */
-    height: 200px; /* Custom height */
+    /width: 1430px; /* Custom width */
+   / height: 200px; /* Custom height */
     display: block;
     margin: 0 auto; /* Center the image horizontally */
 }
@@ -163,4 +159,85 @@ body {
 
 .contact-form-section button:hover {
     background-color: #45a049;
+}
+
+/* Preparation Section: Align images and text like video containers */
+.prep-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.prep-container .image-column {
+    flex: 0 0 200px; /* Set image column size */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+}
+
+.prep-container .image-column img {
+    width: 200px; /* Match image size with other images */
+    height: auto;
+}
+
+.prep-container .text-column {
+    flex: 1;
+    max-width: 600px;
+    text-align: left; /* Left-align text */
+}
+
+.prep-container .video-column {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    justify-content: center; /* Center video horizontally */
+}
+
+/* Image within the columns */
+.prep-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Center the sections and left-align the text inside them */
+.section {
+    text-align: left; /* Left-align the text */
+    margin: 20px auto; /* Center the section itself */
+    padding: 20px;
+    max-width: 1200px; /* Optional: Limit the max width */
+ 
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the body and sections behave nicely */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* For better readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact form adjustments */
+.contact-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 50%; /* Adjust width as needed */
+    margin: 50px auto; /* Centers the form */
+    padding: 40px;
+    background-color: #2f2f2f; /* Dark Green */
+    color: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-form-section form {
+    width: 100%;
 }
