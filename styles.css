@@ -1,5 +1,6 @@
 /* Set a Dark Blue Background */
 body {
+ 
     background-color: #001f3f; /* Dark Blue */
     color: white; /* White text for contrast */
     font-family: Arial, sans-serif;
@@ -49,11 +50,14 @@ body {
 }
 
 /* Optional: Styling for headers */
-.header-text h2 {
+.heading h3 {
     text-align: left;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin: 20px 0; /* Combines top and bottom margin */
+    margin-left: 870px; /* You may want to adjust this value */
+    color: #FFDB58; /* Mustard yellow text color */
 }
+
 
 /* Custom Divider */
 .custom-divider {
@@ -107,18 +111,20 @@ body {
     align-items: center;
     margin-bottom: 20px;
     justify-content: center;
+    margin: 0px;
 }
 
 .video-container img {
     width: 200px; /* Adjust the image size */
     height: auto;
-    margin-right: 20px;
+    margin-right: 120px;
 }
 
 .video-container p {
     flex: 1;
     max-width: 600px; /* Limit width of the paragraph */
     text-align: left; /* Left justify the text */
+    margin-right: 120px;
     color: white;
 }
 
