@@ -1,0 +1,8 @@
+https://github.com/jaffy1229/website
+
+git add -A
+git commit -m  "update"
+git push origin main
+
+
+I take great pride in my work and will do my utmost to transferm you home. The following section outlines my working method and gives you a glimpse of what I do

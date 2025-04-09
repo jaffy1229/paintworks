@@ -49,17 +49,17 @@ body {
     line-height: 1.6; /* Adjust the line height for readability */
 }
 
-/* Optional: Styling for headers */
-.heading h3 {
-    text-align: left;
-    font-size: 1.5rem;
-    margin: 20px 0; /* Combines top and bottom margin */
-    margin-left: 870px; /* You may want to adjust this value */
-    color: #FFDB58; /* Mustard yellow text color */
+ 
+.video-block {
+    text-align: center; /* Center heading */
+    margin-bottom: 40px; /* Space between each block */
 }
 
- 
-
+.video-block h3 {
+    margin-bottom: 10px;
+    color: #FFDB58;
+    font-size: 1.5rem;
+}
 
 
 /* Custom Divider */
@@ -72,8 +72,8 @@ body {
 
 /* Banner Image */
 .banner-img {
-    /width: 1430px; /* Custom width */
-   / height: 200px; /* Custom height */
+  /*  width: 1430px; /* Custom width */
+  /*  height: 200px; /* Custom height */
     display: block;
     margin: 0 auto; /* Center the image horizontally */
 }
